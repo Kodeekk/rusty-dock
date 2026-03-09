@@ -1,0 +1,26 @@
+# Clippy configuration for rusty-dock
+
+# Treat certain lints as warnings instead of errors
+warn = [
+    "clippy::pedantic",
+]
+
+# Allow some lints that are too strict for this project
+allow = [
+    "clippy::too_many_arguments",
+    "clippy::type_complexity",
+    "clippy::module_name_repetitions",
+    "clippy::must_use_candidate",
+    "clippy::missing_errors_doc",
+    "clippy::missing_panics_doc",
+    "clippy::similar_names",
+    "clippy::struct_excessive_bools",
+    "clippy::cast_precision_loss",
+    "clippy::cast_possible_truncation",
+    "clippy::cast_sign_loss",
+    "clippy::float_cmp",
+    "clippy::wildcard_imports",
+]
+
+# Minimum Rust version
+msrv = "1.70.0"
